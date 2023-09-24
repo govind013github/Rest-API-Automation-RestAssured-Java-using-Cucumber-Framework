@@ -45,9 +45,6 @@ Cucumber is used as the test framework, which supports behavior-driven developme
 ## Project Structure
 The project structure is organized for better maintainability and readability. Here's an overview:
 
-
-
-
 src/
 ├── main/
 │   └── java/
@@ -66,11 +63,6 @@ src/
     │   └── ...
     └── config/
         └── ...
-
-
-
-
-
         
 - src/main contains API-related code, such as API clients and utility classes.
 - src/test is where Cucumber features, step definitions, runners, and utilities are located.
