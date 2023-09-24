@@ -95,28 +95,29 @@ Steps Implemented in Rest API Automation Framework from Scratch –
 2.	Defined Project Structure with Cucumber Framework Setup.
 3.	Created Feature File with (. feature) extension inside src/test/java -> features Package and added Test Case you want to Automate.
 4.	Implemented Step Definition smartly with supported code inside 
-[src/test/java ->stepDefinitions package].
+   [src/test/java ->stepDefinitions package].
 5.	Created TestRunner file inside src/test/java -> cucumber.Options package
 6.	Build Utils File to define all reusable request and response specifications inside
-[src/test/java ->resources package].
+   [src/test/java ->resources package].
 7.	Build Pojo classes for Serializing and Deserializing Json payload inside 
-[src/main/java->pojo package]. 
-Also created TestDataBuild class for separating payload from API request.
+   [src/main/java->pojo package]. 
+   Also created TestDataBuild class for separating payload from API request.
 8.	Implemented Logging into Framework to log request and response details.
 9.	Define global.properties file to drive all the global variables from properties file 
-inside resources.
-10.	Implemented Parameterization to run tests with multiple data sets using Cucumber
-‘Examples’ – keyword inside feature file.
+   inside resources.
+10.  Implemented Parameterization to run tests with multiple data sets using Cucumber
+    ‘Examples’ – keyword inside feature file.
 11.	Define Enum class with constants to centralize all resources details inside [src/test/java ->resources package->APIresources.java]
 12.	Developed End to End Functionality Test with all Validations and Assertions.
-13.	 Further Added More Tests and implemented Tagging Mechanism to run selected Tests from Test Runner file.
+13.	Further Added More Tests and implemented Tagging Mechanism to run selected Tests from Test Runner file.
 14.	Implemented Pre and Post conditions for tests with Cucumber Hooks class inside
-[src/test/java ->stepDefinitions package].
+      [src/test/java ->stepDefinitions package].
 15.	Executed Complete Framework from Maven Commands. By navigating to project location using cmd line and execute command – mvn test .
 16.	Implemented Maven driven global values into Test for dynamic execution as below.
-We can use below command to pass ‘tags’ through maven command line as well.
-mvn test -Dcucumber.options=”- - tags @AddPlace”
-Above -D stands for parameters to pass.
-17.	Generate Reports for Test Execution results. (Add reporting plugin by searching on internet as maven cucumber reporting and set dependency in pom.xml file also mention in Cucumber.Options)
+      We can use below command to pass ‘tags’ through maven command line as well.
+      mvn test -Dcucumber.options=”- - tags @AddPlace”
+      Above -D stands for parameters to pass.
+17.	Generate Reports for Test Execution results. (Add reporting plugin by searching on internet as maven cucumber reporting and set dependency in pom.xml file also 
+      mention in Cucumber.Options)
 18.	Integrated the Framework further with Jenkin CI/CD tool.
 19.	Further Implemented Parameterized Jenkins job to choose the global values at run time using Build with Parameters option.
