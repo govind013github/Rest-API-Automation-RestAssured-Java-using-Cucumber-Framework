@@ -1,9 +1,6 @@
-# RestAPIAutomation-Cucumber-Framework-Design
+# Rest Assured API Automation using Cucumber Framework
 
-i have Automated RestAPI using RestAssured-Java with Cucumber Framework. (Please refer master Branch)
-
-This repository contains automated API tests using Rest Assured, a Java-based library for testing RESTful APIs. 
-The tests are organized and executed using the Cucumber framework, which allows for behavior-driven development (BDD) practices and collaboration between technical and non-technical team members.
+This repository contains automated API tests using Rest Assured, a Java-based library for testing RESTful APIs. The tests are organized and executed using the Cucumber framework, which allows for behavior-driven development (BDD) practices and collaboration between technical and non-technical team members.
 
 ## Table of Contents
 
@@ -13,11 +10,11 @@ The tests are organized and executed using the Cucumber framework, which allows 
 - [Cucumber Framework](#cucumber-framework)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
-This project is designed to showcase the automation of API testing using Rest Assured within a Cucumber framework. Rest Assured simplifies API testing by providing a domain-specific language for making API requests and validating responses. 
-Cucumber facilitates writing tests in a natural language format and promotes collaboration between QA engineers, developers, and other stakeholders.
+This project is designed to showcase the automation of API testing using Rest Assured within a Cucumber framework. Rest Assured simplifies API testing by providing a domain-specific language for making API requests and validating responses. Cucumber facilitates writing tests in a natural language format and promotes collaboration between QA engineers, developers, and other stakeholders.
 
 ## Setup
 
@@ -25,26 +22,40 @@ Cucumber facilitates writing tests in a natural language format and promotes col
 
    ```bash
    git clone https://github.com/govind013github/RestAPIAutomation-Cucumber-Framework-Design.git
+   ```
 
-1.Install Java Development Kit (JDK) if not already installed.
-2.Install Maven (if not already installed) for managing project dependencies.
+2. Install Java Development Kit (JDK) if not already installed.
+3. Install Maven (if not already installed) for managing project dependencies.
 
 ## Usage
-1.Navigate to the project directory:
-cd RestAPIAutomation-Cucumber-Framework-Design
 
-2.Build the project:
-mvn clean install
+1. Navigate to the project directory:
 
-3.Run the Cucumber tests:
-mvn test
+   ```bash
+   cd rest-assured-cucumber-api-automation
+   ```
 
-## Cucumber-framework
+2. Build the project:
+
+   ```bash
+   mvn clean install
+   ```
+
+3. Run the Cucumber tests:
+
+   ```bash
+   mvn test
+   ```
+
+## Cucumber Framework
+
 Cucumber is used as the test framework, which supports behavior-driven development (BDD) practices. Features and scenarios are defined in Gherkin, a human-readable language, allowing non-technical team members to participate in the testing process. Cucumber also integrates seamlessly with Rest Assured for API testing.
 
 ## Project Structure
+
 The project structure is organized for better maintainability and readability. Here's an overview:
 
+```
 src/
 ├── main/
 │   └── java/
@@ -63,16 +74,19 @@ src/
     │   └── ...
     └── config/
         └── ...
-        
-- src/main contains API-related code, such as API clients and utility classes.
-- src/test is where Cucumber features, step definitions, runners, and utilities are located.
-- resources includes feature files written in Gherkin and any configuration files.
+```
 
+- `src/main` contains API-related code, such as API clients and utility classes.
+- `src/test` is where Cucumber features, step definitions, runners, and utilities are located.
+- `resources` includes feature files written in Gherkin and any configuration files.
 
 ## Contributing
+
 Contributions to this project are welcome! If you find any issues or want to add new features, feel free to open a pull request. Please ensure that your code follows the established coding standards and includes appropriate tests.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Feel free to customize this README to match the specifics of your project. Make sure to update placeholders (such as repository URL, file paths, etc.) with your actual project details.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Following Below Steps are Implemented in Designing the RestAPIAutomation-Cucumber-Framework-Design from Scratch.
 
 Steps Implemented in Rest API Automation Framework from Scratch – 
@@ -106,9 +120,3 @@ Above -D stands for parameters to pass.
 17.	Generate Reports for Test Execution results. (Add reporting plugin by searching on internet as maven cucumber reporting and set dependency in pom.xml file also mention in Cucumber.Options)
 18.	Integrated the Framework further with Jenkin CI/CD tool.
 19.	Further Implemented Parameterized Jenkins job to choose the global values at run time using Build with Parameters option.
-
-
-
-
-
-
