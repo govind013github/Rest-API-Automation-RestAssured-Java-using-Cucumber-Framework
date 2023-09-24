@@ -46,6 +46,8 @@ Cucumber is used as the test framework, which supports behavior-driven developme
 The project structure is organized for better maintainability and readability. Here's an overview:
 
 
+
+
 src/
 ├── main/
 │   └── java/
@@ -64,6 +66,9 @@ src/
     │   └── ...
     └── config/
         └── ...
+
+
+
 
 
         
